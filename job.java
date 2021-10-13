@@ -1,7 +1,7 @@
-public class Job implements Runnable {
+public class job implements Runnable {
 	private int jobNumber;
 
- 	Job (int jobNumber) {
+ 	job(int jobNumber) {
  		this.jobNumber = jobNumber;
  	}
 
@@ -10,7 +10,7 @@ public class Job implements Runnable {
 	 System.out.println ("Job: " + jobNumber + " is being processed by thread : "
  		+ Thread.currentThread ().getName());
  	try {
- 		Thread.sleep((int)(1000));
+ 		Thread.sleep(1000);
  	} catch (InterruptedException e) {
  		// no catching as example should not experience interruptions
  	}
